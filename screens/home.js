@@ -32,11 +32,12 @@ export default function Home({ navigation }) {
   }
 
   return (
-    <ImageBackground 
-      source={space} 
-      style={{
-        flex: 1,
-        resizeMode: "cover"}}>
+    //<ImageBackground 
+    //   source={space} 
+    //   style={{
+    //     flex: 1,
+    //     resizeMode: "cover"}}>
+    <>
         <Modal visible={openModal}>
         <Icon name='cancel' size={50}  color='red' onPress={()=>setModal(false)}/>
           
@@ -54,6 +55,7 @@ export default function Home({ navigation }) {
           </TouchableOpacity>
         )} />
       </View>
-    </ImageBackground>
+      
+    </>
   );
 }
